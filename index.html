@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Finder Pro</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📍 Local Finder Pro</h1>
+
+<div class="controls">
+    <button onclick="getLocation()">📍 Get Location</button>
+
+    <select id="type">
+        <option value="hospital">Hospital</option>
+        <option value="restaurant">Restaurant</option>
+        <option value="atm">ATM</option>
+    </select>
+
+    <button onclick="searchPlaces()">🔍 Search</button>
+    <button onclick="emergency()">🚨 Emergency</button>
+    <button onclick="startVoice()">🎤 Voice</button>
+</div>
+
+<div id="map"></div>
+<div id="results"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
